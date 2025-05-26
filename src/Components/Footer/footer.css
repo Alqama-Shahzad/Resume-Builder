@@ -1,0 +1,60 @@
+.footer {
+    position: relative;
+    z-index: 10;
+}
+
+.footer-logo {
+    height: 36px;
+    width: auto;
+}
+
+.footer-brand {
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    letter-spacing: -0.5px;
+    font-size: 1.2rem;
+}
+
+.footer-brand span {
+    font-weight: 400;
+}
+
+.copyright-text {
+    opacity: 0.8;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(79, 209, 197, 0.1);
+    color: var(--primary);
+    transition: all 0.3s ease;
+}
+
+.social-button:hover {
+    background-color: var(--primary);
+    color: white;
+    transform: translateY(-3px);
+}
+
+body.chakra-ui-dark .social-button {
+    background-color: rgba(79, 209, 197, 0.2);
+}
+
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+} 

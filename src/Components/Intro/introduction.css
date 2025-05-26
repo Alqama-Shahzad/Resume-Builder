@@ -1,0 +1,186 @@
+.Bullet_Points {
+    display: flex;
+    margin: 5px 0px;
+    align-items: center;
+}
+
+.Bullet_Points p {
+    margin: 0px 5px;
+}
+
+
+.templatesList {
+    font-family: "Poppins";
+    color: #fff;
+    text-align: center;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.template {
+    font-family: "Poppins";
+    color: #fff;
+    text-align: center;
+    height: 300px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: auto;
+    border: 1px solid #ccc;
+    margin: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.template:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.template:nth-child(odd) {
+    border-radius: 12px;
+}
+
+.template:nth-child(even) {
+    border-radius: 8px;
+}
+
+.template img {
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(79, 209, 197, 0.2) 0%, rgba(79, 209, 197, 0) 70%);
+    z-index: -1;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    bottom: -200px;
+    left: -200px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(85, 60, 154, 0.2) 0%, rgba(85, 60, 154, 0) 70%);
+    z-index: -1;
+}
+
+.hero-title {
+    letter-spacing: -1.2px;
+}
+
+.hero-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.1));
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.step-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    background-color: rgba(79, 209, 197, 0.05);
+    transition: all 0.3s ease;
+}
+
+.step-item:hover {
+    background-color: rgba(79, 209, 197, 0.1);
+    transform: translateX(5px);
+}
+
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(79, 209, 197, 0.3);
+}
+
+.cta-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+    transition: all 0.6s ease;
+}
+
+.cta-button:hover::before {
+    left: 100%;
+}
+
+.templates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.template-card {
+    cursor: pointer;
+    border: 1px solid var(--border);
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.template-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.template-info {
+    border-top: 1px solid var(--border);
+}

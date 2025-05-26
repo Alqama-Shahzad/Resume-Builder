@@ -1,0 +1,115 @@
+.glass-nav {
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+body.chakra-ui-dark .glass-nav {
+  background: rgba(26, 32, 44, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo-image {
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.logo-text {
+  background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  letter-spacing: -0.5px;
+}
+
+.logo-text span {
+  font-weight: 400;
+}
+
+.nav-link {
+  position: relative;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+body.chakra-ui-dark .nav-link {
+  color: var(--white);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.theme-toggle {
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-toggle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(79, 209, 197, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+.theme-toggle:hover::before {
+  width: 200%;
+  height: 200%;
+}
+
+.mobile-menu {
+  border-top: 1px solid var(--border);
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.nav-link-mobile {
+  display: block;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-link-mobile:hover {
+  background: rgba(79, 209, 197, 0.1);
+}
+
+body.chakra-ui-dark .nav-link-mobile:hover {
+  background: rgba(79, 209, 197, 0.2);
+}
+
+.mobile-menu-btn {
+  border-radius: var(--radius-md);
+  background: transparent !important;
+}
+
+.mobile-menu-btn:hover {
+  background: rgba(79, 209, 197, 0.1) !important;
+}
+
+body.chakra-ui-dark .mobile-menu-btn:hover {
+  background: rgba(79, 209, 197, 0.2) !important;
+} 
