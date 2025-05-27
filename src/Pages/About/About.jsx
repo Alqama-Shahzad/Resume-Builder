@@ -1,4 +1,4 @@
-import { Avatar, Box, chakra, Flex, Icon, SimpleGrid, useColorModeValue, Container, Heading, Text, Stack } from '@chakra-ui/react';
+import { Avatar, Box, Flex, Icon, SimpleGrid, useColorModeValue, Container, Heading, Text, Stack } from '@chakra-ui/react';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import './about.css';

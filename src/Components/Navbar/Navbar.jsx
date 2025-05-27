@@ -1,4 +1,4 @@
-import { Box, Flex, HStack, IconButton, useDisclosure, useColorMode, useColorModeValue, Stack, Button, Text, Container } from '@chakra-ui/react';
+import { Box, Flex, HStack, IconButton, useDisclosure, useColorMode, Stack, Button, Text, Container } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { Link as ReachLink } from 'react-router-dom';
 import logo from './../../Assets/logo.png';
